@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>员工后台首页</description>
+    <display-name>员工后台首页</display-name>
+    <servlet-name>EmployeeIndexServlet</servlet-name>
+    <servlet-class>com.sxau.controller.employee.EmployeeIndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>机械类型管理</description>
+    <display-name>机械类型管理</display-name>
+    <servlet-name>EmployeeTypeServlet</servlet-name>
+    <servlet-class>com.sxau.controller.employee.EmployeeTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>员工管理</description>
+    <display-name>员工管理</display-name>
+    <servlet-name>EmployeeUserServlet</servlet-name>
+    <servlet-class>com.sxau.controller.employee.EmployeeUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>机械工具管理</description>
+    <display-name>机械工具管理</display-name>
+    <servlet-name>EmployeeMachineServlet</servlet-name>
+    <servlet-class>com.sxau.controller.employee.EmployeeMachineServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>机械工具图片显示</description>
+    <display-name>机械工具图片显示</display-name>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.sxau.controller.UploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>订单管理</description>
+    <display-name>订单管理</display-name>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>com.sxau.controller.employee.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>登录</description>
+    <display-name>登录</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.sxau.controller.employee.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>前台首页</description>
+    <display-name>前台首页</display-name>
+    <servlet-name>UserIndexServlet</servlet-name>
+    <servlet-class>com.sxau.controller.user.UserIndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>前台登录</description>
+    <display-name>前台登录</display-name>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>com.sxau.controller.user.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>机械类型展示</description>
+    <display-name>机械类型展示</display-name>
+    <servlet-name>UserMachineTypeServlet</servlet-name>
+    <servlet-class>com.sxau.controller.user.UserMachineTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>前台商品展示</description>
+    <display-name>前台商品展示</display-name>
+    <servlet-name>UserMachineServlet</servlet-name>
+    <servlet-class>com.sxau.controller.user.UserMachineServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>前台商品详细展示</description>
+    <display-name>前台商品详细展示</display-name>
+    <servlet-name>UserMachineDetailServlet</servlet-name>
+    <servlet-class>com.sxau.controller.user.UserMachineDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>用户中心</description>
+    <display-name>用户中心</display-name>
+    <servlet-name>UserCenterServlet</servlet-name>
+    <servlet-class>com.sxau.controller.user.UserCenterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>用户查看订单</description>
+    <display-name>用户查看订单</display-name>
+    <servlet-name>UserOrderServlet</servlet-name>
+    <servlet-class>com.sxau.controller.user.UserOrderServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>EmployeeIndexServlet</servlet-name>
+    <url-pattern>/employee/index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmployeeTypeServlet</servlet-name>
+    <url-pattern>/employee/TypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmployeeUserServlet</servlet-name>
+    <url-pattern>/employee/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmployeeMachineServlet</servlet-name>
+    <url-pattern>/employee/MachineServlet</url-pattern>
+  </servlet-mapping>	
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/employee/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/employee/OrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/employee/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserIndexServlet</servlet-name>
+    <url-pattern>/user/IndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/user/UserLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserMachineTypeServlet</servlet-name>
+    <url-pattern>/user/MachineTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserMachineServlet</servlet-name>
+    <url-pattern>/user/UserMachineServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserMachineDetailServlet</servlet-name>
+    <url-pattern>/user/MachineDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserCenterServlet</servlet-name>
+    <url-pattern>/user/UserCenterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserOrderServlet</servlet-name>
+    <url-pattern>/user/UserOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <filter>
+  	<description>CharaterFilter</description>
+  	<filter-name>CharaterFilter</filter-name>
+  	<filter-class>com.sxau.util.filter.CharaterFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>CharaterFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+  <filter>
+  	<description>EmployeeLoginFilter</description>
+  	<filter-name>EmployeeLoginFilter</filter-name>
+  	<filter-class>com.sxau.util.filter.EmployeeLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>EmployeeLoginFilter</filter-name>
+  	<servlet-name>EmployeeTypeServlet</servlet-name>
+  	<servlet-name>EmployeeUserServlet</servlet-name>
+  	<servlet-name>EmployeeMachineServlet</servlet-name>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<servlet-name>EmployeeIndexServlet</servlet-name>
+  </filter-mapping>
+  
+  
+  <filter>
+  	<description>UserLoginFilter</description>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<filter-class>com.sxau.util.filter.UserLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>UserLoginFilter</filter-name>
+  	<servlet-name>UserMachineTypeServlet</servlet-name>
+  	<servlet-name>UserCenterServlet</servlet-name>
+  	<servlet-name>UserMachineDetailServlet</servlet-name>
+  	<servlet-name>UserMachineServlet</servlet-name>
+  	<servlet-name>UserOrderServlet</servlet-name>
+  	
+  </filter-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
